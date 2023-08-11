@@ -1,19 +1,19 @@
 // swaping value 
   
 let array= [1,2,3,45,4,5];
-// let len = array.length
-// let tem = array[0];
-// array[0]=array[len-1];
-// array[len-1] = tem;
+let len = array.length
+let tem = array[0];
+array[0]=array[len-1];
+array[len-1] = tem;
 
 // array distructuring 
-// [array[0], array[5]]= [array[5], array[0]];
-// console.log({array});
+[array[0], array[5]]= [array[5], array[0]];
+console.log({array});
 
-// let a =5 ;
-// let b = 10;
-// [a,b] = [b,a]
-// console.log({a, b})
+let a =5 ;
+let b = 10;
+[a,b] = [b,a]
+console.log({a, b})
 
 
 // copy clicpboard
@@ -31,15 +31,15 @@ function handleClick(){
 }
 
 // 3. destructuring aliases
-// const language = {
-//     name: "saheb",
-//     age: 23,
-//     address: "dhaka"
-// }
+const language = {
+    name: "saheb",
+    age: 23,
+    address: "dhaka"
+}
  
-// const {name : fullName, age: Age} = language;
-// // console.log({name, age})
-// console.log({fullName, Age})
+const {name : fullName, age: Age} = language;
+// console.log({name, age})
+console.log({fullName, Age})
 
 
 // 4. get value as data type
@@ -47,18 +47,18 @@ function handleClick(){
 
 
 // 5. remove duplicate value from array
-// const Array = [1,2,3,3,4,4,4,43,43];
-// console.log([...new Set(Array)])
+const Array = [1,2,3,3,4,4,4,43,43];
+console.log([...new Set(Array)])
 
 //6. compare two arrays by value
-// const hasSameElements= (a,b)=>{
-//     return a.length === b.length && a.every((v, i)=>v === b[i])
-// }
-// console.log(hasSameElements([2,2],[2,2]));
+const hasSameElements= (a,b)=>{
+    return a.length === b.length && a.every((v, i)=>v === b[i])
+}
+console.log(hasSameElements([2,2],[2,2]));
 
 // 7. shuffling array
-// const number = [1,2,3,4,5,6];
-// console.log(number.sort(()=>Math.random() -0.5));
+const number = [1,2,3,4,5,6];
+console.log(number.sort(()=>Math.random() -0.5));
 
 
 // 8. comma operator

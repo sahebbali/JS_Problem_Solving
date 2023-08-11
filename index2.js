@@ -11,7 +11,7 @@ function myFunc(){
 const string =  myFunc `hello`;
 console.log(string); // Bangladesh
 
-// how to creat erery website in editable?
+// how to creat every website in editable?
 document.body.contentEditable= true;
 
 

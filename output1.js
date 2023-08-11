@@ -1,18 +1,18 @@
 // Input: const result = ["apple","apple","Banana","Banana",'tip','tip','tip',1,2,1,2,3];
 // output: {'apple': 2, 'Banana':2, "tip":2, 1:2, 2:2 .....}
 
-// const result = ["apple","apple","Banana","Banana",'tip','tip','tip',1,2,1,2,3];
+const result = ["apple","apple","Banana","Banana",'tip','tip','tip',1,2,1,2,3];
 
-// function FilterData(data){
-//     const output = {};
-//     data.map((d)=>{
-//         output[d] = (output[d] || 0) + 1;
-//     })
+function FilterData(data){
+    const output = {};
+    data.map((d)=>{
+        output[d] = (output[d] || 0) + 1;
+    })
 
-//     return output;
-// }
+    return output;
+}
 
-// console.log(FilterData(result));
+console.log(FilterData(result));
 
 
 
