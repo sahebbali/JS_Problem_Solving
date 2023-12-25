@@ -8,7 +8,6 @@ function FilterData(data){
     data.map((d)=>{
         output[d] = (output[d] || 0) + 1;
     })
-
     return output;
 }
 
@@ -18,43 +17,48 @@ console.log(FilterData(result));
 
 // Input: "I love Bangladesh"
 // Output: I evol hsedalgnaB
-// const str = "I love Bangladesh";
 
-// function RerseString(data){
-//     const dataArray = data.split(" ");
+const str = "I love Bangladesh";
+function RerseString(data){
+    const dataArray = data.split(" ");
     
-//    let result = dataArray.map((d)=>{
-//        return d.split("").reverse().join("");
-//         console.log(d)
-//     })
-//     console.log(result)
-//     return result.join(" ");
-// }
-// console.log(RerseString(str))
+   let result = dataArray.map((d)=>{
+       return d.split("").reverse().join("");
+        console.log(d)
+    })
+    console.log(result)
+    return result.join(" ");
+}
+console.log(RerseString(str))
 
 
 // string words by length in a sentence by as order.
 // Input: Java is a Programing language
 // Output:a is Java language Programing
 
-// const str  = "Java is a Programing language";
-// function sortWord(data){
-//     const dataArray = data.split(" ");
-//     dataArray.sort((a,b)=>{
-//         return a.length - b.length;
-//     })
-//     return dataArray.join(" ");
-// }
-// console.log(sortWord(str));
+const str  = "Java is a Programing language";
+function sortWord(data){
+    const dataArray = data.split(" ");
+    dataArray.sort((a,b)=>{
+        return a.length - b.length;
+    })
+    return dataArray.join(" ");
+}
+console.log(sortWord(str));
 
-// const data = [1,2,3,44,5,52,2,23,24,25,333];
-// function ascOrder(data){
-//  const result = data.sort((a,b)=>{
-//       return b -a  
-//       })
-//     console.log(result);
-// }
-// console.log(ascOrder(data))
+
+
+const data = [1,2,3,44,5,52,2,23,24,25,333];
+function ascOrder(data){
+ const result = data.sort((a,b)=>{
+      return b -a  
+      })
+    console.log(result);
+}
+console.log(ascOrder(data))
+
+
+
 const data = [1,2,3,44,5,52,2,23,24,25,333];
 function ascOrder(data){
     const len = data.length;

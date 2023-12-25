@@ -1,19 +1,18 @@
 
-// class Player {   // class is a buluprient of the actual object
-//     constructor(name, age, skill){ // constructor is a building funcion its autometicaly call in the class
-//         this.name = name,
-//         this.age = age,
-//         this.skill = skill;
+class Player {   // class is a buluprient of the actual object
+    constructor(name, age, skill){ // constructor is a building funcion its autometicaly call in the class
+        this.name = name,
+        this.age = age,
+        this.skill = skill;
+    };
+    sayhello(){
+        return `Hi This is ${this.name} I am ${this.age} I am a ${this.skill}`;
+    };
+};
 
-//     };
-//     sayhello(){
-//         return `Hi This is ${this.name} I am ${this.age} I am a ${this.skill}`;
-//     };
-// };
-
-// const saheb = new Player("Saheb ali" , 26, "JavaScript Developer");
-// console.log(saheb.sayhello())
-// console.log({saheb})
+const saheb = new Player("Saheb ali" , 26, "JavaScript Developer");
+console.log(saheb.sayhello())
+console.log({saheb})
 
 
 
@@ -108,29 +107,29 @@
 
 // Abstraction 
 // Hide implementation and show diclearative way to write code 
-// class BetterArray {
-//     #item;
-//     constructor(){
-//         this.#item = [];
-//     }
+class BetterArray {
+    #item;
+    constructor(){
+        this.#item = [];
+    }
 
-//     getItems(){
-//         return [...this.#item];
-//     }
+    getItems(){
+        return [...this.#item];
+    }
 
-//     addItems(item){
-//         this.#item.push(item)
-//     }
-//     removeItems(ItemDelete){
-//         this.#item =  this.#item.filter((i) => i !== ItemDelete);
-//     }
-//     updateItems(itemToChange, newValue){
-//         const index = this.#item.indexOf(itemToChange)
-//         if(index !== -1){
-//             this.#item[index] = newValue;
-//         }
-//     }
-// }
+    addItems(item){
+        this.#item.push(item)
+    }
+    removeItems(ItemDelete){
+        this.#item =  this.#item.filter((i) => i !== ItemDelete);
+    }
+    updateItems(itemToChange, newValue){
+        const index = this.#item.indexOf(itemToChange)
+        if(index !== -1){
+            this.#item[index] = newValue;
+        }
+    }
+}
 
 // const array = new BetterArray();
 // array.addItems("I am 32 years old");
@@ -144,7 +143,7 @@
 
 
 
-// inheritance
+// Pholimorphom
 
 class Player{
     // priver property can not access out side of the class
